@@ -13,18 +13,23 @@ public class TrialsClass {
 		System.out.println(fileReadingInput[1]);
 		System.out.println(fileReadingInput[2]);
 		System.out.println(fileReadingInput[3]);
+		
 //		initializing user service
+		
 		UserService userServiceTrial = new UserService();
 
 		String[] parseInputTrialUser1 = userServiceTrial.parseText(fileReadingInput[0]);
 		String[] parseInputTrialUser2 = userServiceTrial.parseText(fileReadingInput[1]);
 		String[] parseInputTrialUser3 = userServiceTrial.parseText(fileReadingInput[2]);
-
-		System.out.println(parseInputTrialUser1[1]);
+		String[] parseInputTrialUser4 = userServiceTrial.parseText(fileReadingInput[3]);
+//		System.out.println(parseInputTrialUser1[1]);
+		
 //		initializing User
+		
 		User user1 = userServiceTrial.createUser(parseInputTrialUser1);
 		User user2 = userServiceTrial.createUser(parseInputTrialUser2);
 		User user3 = userServiceTrial.createUser(parseInputTrialUser3);
+		User user4 = userServiceTrial.createUser(parseInputTrialUser4);
 
 		System.out.println(user3.getName());
 //		initializing scanner
@@ -55,7 +60,7 @@ public class TrialsClass {
 					break;
 				} else {
 					numOfTrials--;
-					System.out.println("try again");
+					System.out.println("Try again");
 				}
 
 			}
