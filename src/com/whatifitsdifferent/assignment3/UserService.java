@@ -1,10 +1,6 @@
 package com.whatifitsdifferent.assignment3;
 
-//import com.whatifitsdifferent.assignment3.User;
-
-//import com.whatifitsdifferent.level2.User;
-
-public class UserService{
+public class UserService {
 	
 	public User createUser(String [] inputs) {
 		
@@ -24,6 +20,7 @@ public class UserService{
 		String[] parseString = inputForParsing.split(",");
 		
 		return parseString;
+		
 		}
 
 

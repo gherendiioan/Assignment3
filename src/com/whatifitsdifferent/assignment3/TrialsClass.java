@@ -5,7 +5,9 @@ import java.io.IOException;
 public class TrialsClass {
 
 	public static void main(String[] args) throws IOException {
+		
 //		Initializing the FileReaderClass 
+		
 		FileReaderClass tryMe = new FileReaderClass();
 
 		String[] fileReadingInput = tryMe.fileReadingMethod();
@@ -22,7 +24,7 @@ public class TrialsClass {
 		String[] parseInputTrialUser2 = userServiceTrial.parseText(fileReadingInput[1]);
 		String[] parseInputTrialUser3 = userServiceTrial.parseText(fileReadingInput[2]);
 		String[] parseInputTrialUser4 = userServiceTrial.parseText(fileReadingInput[3]);
-//		System.out.println(parseInputTrialUser1[1]);
+		System.out.println(parseInputTrialUser1[0]);
 		
 //		initializing User
 		
@@ -32,7 +34,9 @@ public class TrialsClass {
 		User user4 = userServiceTrial.createUser(parseInputTrialUser4);
 
 		System.out.println(user3.getName());
+		
 //		initializing scanner
+		
 		UserInputScanner tryThisNow = new UserInputScanner();
 
 //		tryThisNow.userInputMethod();
@@ -51,8 +55,8 @@ public class TrialsClass {
 			String passwordInput = tryThisNow.userInputMethod();
 		
 			
-			if (usernameInput.equalsIgnoreCase(user3.getUsername()) == true && (passwordInput.equals(user3.getPassword()))) {
-				System.out.println("Welcome " + user3.getName());
+			if (usernameInput.equalsIgnoreCase(user4.getUsername()) == true && (passwordInput.equals(user4.getPassword()))) {
+				System.out.println("Welcome " + user4.getName());
 				break;
 			} else {
 				if (numOfTrials == 0) {
