@@ -2,7 +2,7 @@ package com.whatifitsdifferent.assignment3;
 
 import java.io.IOException;
 
-public class LoopTest {
+public class Application {
 
 	public static void main(String[] args) throws IOException {
 		
