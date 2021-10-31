@@ -6,11 +6,15 @@ public class UserInputScanner {
 
 	String userInputMethod() {
 
+		
+		@SuppressWarnings("resource")
 		Scanner userInputScan = new Scanner(System.in);
 		String userInput = userInputScan.nextLine();
-		userInputScan.close();
+		
+		
 		return userInput;
+		
 
 	}
-
+	
 }
