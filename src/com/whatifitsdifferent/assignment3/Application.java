@@ -69,7 +69,7 @@ public class Application {
 						}
 												
 						if (numOfTrials == 0) {
-							System.out.println("Too many failed login attempts, you are nou locked out.");
+							System.out.println("Too many failed login attempts, you are now locked out.");
 							break;
 						} else {
 							numOfTrials--;
