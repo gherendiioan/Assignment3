@@ -14,7 +14,6 @@ public class UserInputScanner {
 		
 		return userInput;
 		
-
 	}
 	
 }

@@ -69,11 +69,11 @@ public class Application {
 						}
 												
 						if (numOfTrials == 0) {
-							System.out.println("Account Blocked");
+							System.out.println("Too many failed login attempts, you are nou locked out.");
 							break;
 						} else {
 							numOfTrials--;
-							System.out.println("Try again");
+							System.out.println("Invalid login, please try again");
 						}
 
 					}
